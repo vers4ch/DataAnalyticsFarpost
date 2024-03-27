@@ -1,3 +1,2 @@
-csv
 sqlalchemy
 psycopg2-binary

@@ -23,12 +23,18 @@ git clone https://github.com/vers4ch/DataAnalyticsFarpost.git
 ```
 ### Запуск PostgreSQL
 ```shell
-cd DatabaseAnalyticsFarpost/postgres
+cd DataAnalyticsFarpost/postgres
 ```
-Соберем образ:
+**Соберем образ:**
+Для Unix:
 ```shell
 sudo docker build -t far-db .
 ```
+Для Windows(на Windows не проверялось, всё писалось и тестировалось на MacOS Sonoma(Apple M1)):
+```shell
+docker build -t far-db .
+```
+
 Запустим контейнер(строго с этими значениями, иначе могут возникнуть проблемы со скриптом)
 ```shell
 docker run -d --name far-db-container -e POSTGRES_PASSWORD=admin -p 5433:5432 far-db
