@@ -16,6 +16,8 @@
 
 Скрипт написан на Python, библа: SQLAlchemy версия: psycopg2.
 
+**Если git не хочет или неправильно клонирует репозиторий, это может быть связано с лимитами Git LFS, файл farpost_db1.dump весит >100мб. Для этого я залил проект на Yandex Disk https://disk.yandex.ru/d/x_6TCbYBt4RBqg**
+
 
 ## Инструкция
 ```shell
